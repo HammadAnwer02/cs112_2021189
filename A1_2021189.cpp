@@ -6,7 +6,7 @@ int main()
     BookList bl1;
     StudentList std1;
     cout << setw(50) << setfill('_') << endl
-         << "|" << setw(17) << setfill(' ') << "GIKI LIBRARY MANAGEMENT SYSTEM"
+         << "|" << setw(17) << setfill(' ') << "GIKI LIBRARY MANAGEMENT SYSTEMS"
          << "|"
          << setw(50) << setfill('_') << "\n\n\n\n";
     printMenu();
