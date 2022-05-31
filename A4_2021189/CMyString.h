@@ -6,27 +6,25 @@
 class CMyString
 {
     friend std::ostream &operator<<(std::ostream &, const CMyString&);
-    friend std::istream &operator>>(std::istream &, CMyString &);
+    friend std::istream &operator>>(std::istream &, CMyString&);
 
 private:
     char *text;
-    int strcmp(const char *, const char *);
-    void myStrcpy(char *, const char *);
-    int myStrlen(const char *);
+    int mystrcmp(const char *, const char *);
 public:
     CMyString(int = 50);
     CMyString(const char *);
     int getStringSize() const;
     int getChArrSize() const;
-    CMyString operator+(const CMyString);
-    CMyString& operator+=(CMyString);
+    CMyString operator+(const CMyString&);
+    CMyString& operator+=(const CMyString&);
     char &operator[](int);
-    bool operator==(const CMyString);
-    bool operator!=(const CMyString);
-    bool operator>(const CMyString);
-    bool operator<(const CMyString);
+    bool operator==(const CMyString&);
+    bool operator!=(const CMyString&);
+    bool operator>(const CMyString&);
+    bool operator<(const CMyString&);
     CMyString operator()(int, int);
-    void operator=(CMyString);
+    void operator=(const CMyString&);
     CMyString operator<<(int);
     CMyString operator>>(int);
     ~CMyString();
